@@ -8,16 +8,12 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'metric',
+        loadChildren: () => import('../metric-bmi/metric-bmi.module').then(m => m.MetricBmiPageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
-      },
-      {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: 'imperial',
+        loadChildren: () => import('../imperial/imperial.module').then(m => m.ImperialPageModule)
       },
       {
         path: '',
